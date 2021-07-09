@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg, #33ccff, #31d5ff, #ffccff,#31d5ff);
+}
+body::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    bottom: 2%;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    background: rgba(255, 255, 255, .5);
+    animation: zigzag1 3s linear infinite;
+}
+@keyframes zigzag1 {
+    0%, 100% {
+        transform: translateX(60px);
+    }
+    50% {
+        transform: translateY(120px);
+    }
+}
+body::after {
+    content: '';
+    position: absolute;
+    left: 92%;
+    top: 12%;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, .5);
+    z-index: -1;
+    animation: zigzag2 3s linear infinite;
+}
+.container {
+    width: 90%;
+    height: 85vh;
+    background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(5px);
+}
+.container .navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px 25px;
+    margin-top: 1em;
+}
+.container .navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.container .navbar .logo .logoname {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: .5em;
+
+}
+.container .navbar .serchbox {
+    position: relative;
+
+}
+.container .navbar .serchbox  input {
+    padding: 8px 120px 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: .3s;
+
+} 
+.logo > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.account > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.container .navbar .serchbox  input:focus {
+    padding: 8px 250px 8px 20px;
+}
+.container .navbar .serchbox .fas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+.container .navbar .navitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .navbar .navitem .lang select {
+    padding: 6px 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    position: relative;
+    right: 4em;
+}
+.container .navbar .navitem .icons {
+    position: relative;
+    right: 1em;
+}
+.container .navbar .navitem .icons ul li {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 16px;
+    color: #33cc33;
+}
+.container .navbar .navitem .icons ul li .fas {
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    transition: .3s;
+}
+.container .navbar .navitem .icons ul li .fas:hover {
+    transform: scale(1,2) rotate(360deg);
+    background:transparent;
+}
+.container .navbar .navitem .account  {
+    border-radius: 50px;
+}
+.container .navbar .navitem .account .name {
+    text-transform: capitalize;
+    margin: 0 8px;
+    font-weight: 700;
+}
+.container .navbar .navitem .account .name .username {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+    font-size: 12px;
+
+}
+.containerbody {
+    display: grid;
+    grid-template-columns: 18% auto;
+}
+.containerbody .sidebar {
+    margin: 20px 0 20px 20px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 14px;
+    padding: 10px;
+
+
+}
+.containerbody .sidebar ul li {
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+.containerbody .sidebar ul li:hover {
+    background: #00004d;
+    color: #fff;
+    border-radius: 8px;
+}
+.containerbody .sidebar ul li:hover a {
+    color: #fff;
+}
+.containerbody .sidebar ul li a {
+    color: #000;
+    text-transform:capitalize;
+    font-weight: 700;
+}
+.containerbody .sidebar ul .dashboard1 {
+    background: #00004d;
+    color:white;
+    border-radius: 8;
+    padding: 10px;
+}
+.containerbody .sidebar ul .dashboard a{
+    color: black;
+}
+/* .containerbody .sidebar ul .dashboard1 a {
+    color: white;
+} */
+.containerbody .sidebar ul li .fas {
+    font-size: 18px;
+    padding: 0 5px;
+}
+.containerbody .mainbody .title {
+    padding: 15px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+.containerbody .mainbody .title .greeting {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+}
+.containerbody .mainbody .title  h2 {
+    font-size: 25px;
+    font-weight: normal;
+
+}
+.containerbody .mainbody .cards {
+    display: grid;
+    grid-template-rows: 180px 140px;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.containerbody .mainbody .cards .row-1 {
+    display: grid;
+    grid-template-columns: 30% 40% auto;
+    grid-gap: 20px;
+}
+.containerbody .mainbody .cards .row-2 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+}
+.containerbody .mainbody .cards .row .col {
+    background: rgba(255, 255, 255, .4);
+}
+.containerbody .mainbody .cards .row .col  .cardtile {
+    font-size: 16px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+.balancecard {
+    position: relative;
+}
+.balancecard h2 {
+    font-size: 28px;
+    padding: 10px 20px;
+}
+.balancecard span {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    color: #33cc33;
+}
+.debitcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 18px;
+    background: darkblue;
+    color: #fff;
+
+}
+.debitcard .cardnumber {
+    font-size: 18px;
+    padding: 10px 20px;
+    padding-right: 0;
+    background: white;
+    color: black;
+    font-weight: normal;
+}
+.debitcard .cardholder {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: normal;
+}
+.debitcard > h3{
+    text-align: left;
+}
+.cardtitle{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    text-align: center;
+
+}
+.col .a {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px 5px 20px 20px;
+    text-align: center;
+}
+
+.col .status {
+    font-size: 18px;
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: #fff;
+    position: relative;
+    bottom: 3px;
+}
+.totalinvoice .status {
+    font-size: 700;
+    color: #339933;
+    font-size: 16px;
+    padding-left: 5px;
+
+}
+.paidinvoice .status {
+    background: #0066cc;
+
+}
+.unpaidinvoice .status {
+    background: #ff0066;
+}
+.invoicesent .status {
+    background: #ffcc00;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Dashboard1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img width="40" src="giphy.gif" alt="This is an image">
+                <span class="logoname">LOGO NAME</span>
+            </div>
+            <div class="serchbox">
+                <form action="">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+            <div class="navitem">
+                <div class="lang">
+                    <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                    </select>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li> <i class="fas fa-envelope"></i></li>
+                        <li> <i class="fas fa-bell"></i></li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <img  width="40"src="imp.jpg" alt="">
+                    <span class="name">Robert Downey</span>
+                    <span class="username">@robert545</span>
+                </div>
+            </div>
+        </div>
+        <div class="containerbody">
+            <div class="sidebar">
+                <ul>
+                    <li class="dashboard1">
+                        <i class="fab fa-dashcube"></i>
+                        <a href="#" style="color: white;">Dashboard</a>
+                    </li>
+
+                    <li class="dashboard">
+                        <i class="far fa-money-bill-alt"></i>
+                        <a href="#">Balance</a>
+                    </li>
+
+                    <li class="dashboard">
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">Invoice</a>
+                    </li>
+
+                    <li class="dashboard">
+                        <i class="far fa-credit-card"></i>
+                        <a href="#">Card</a>
+                    </li>
+
+                    <li class="dashboard">
+                        <i class="fas fa-history"></i>
+                        <a href="#">History</a>
+                    </li>
+                    <li class="dashboard">
+                        <i class="fas fa-info-circle"></i>
+                        <a href="#">Details</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mainbody">
+                <div class="title">
+                    <span class="greeting">Hii Robert,</span>
+                    <h2>Overview</h2>
+                </div>
+                <div class="cards">
+                    <div class="row row-1">
+                        <div class="col">
+                            <div class="balancecard">
+                                <h3 class="cardtitle">Balance</h3>
+                                <h2 class="balance">$45321.65</h2>
+                                <span class="balancestatus">+15%</span>
+                                <i  class="fas fa-signal fa-2x" style="color: blue;"></i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="latestactivity">
+                                <h3 class="cardtitle">latest activity</h3>
+                                <img height="150" width="500" src="graph1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="debitcard">
+                                <h3 class="cardtitle">My card</h3>
+                                <h3 class="cardnumber">1234 5678 9101 123</h3>
+                                <h3 class="cardholder">Robert Downey</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div class="col">
+                            <div class="totalinvoice">
+                                <h3 class="cardtitle">total invoice</h3>
+                                <br><br>
+                                <span class="a"><i>520</i>
+                                    <span class="status">+12%</span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="paidinvoice">
+                                <h3 class="cardtitle">paid invoice</h3>
+                                <br><br>
+                                <span class="a"><i>210</i>
+                                    <span class="status">
+                                        +85%
+                                        <i class="fas fa-chart-line"></i>
+                                    </span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="unpaidinvoice">
+                                <h3 class="cardtitle">unpaid invoice</h3>
+                                <br><br>
+                                
+                                <span class="a"><i>65</i>
+                                    <span class="status">
+                                        +15%
+                                        <i class="fas fa-chart-line"></i>
+                                    </span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="invoicesent">
+                                <h3 class="cardtitle">invoice sent</h3>
+                                <br><br>
+                                <span class="a"><i>120</i>
+                                    <span class="status">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
